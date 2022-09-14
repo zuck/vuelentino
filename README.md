@@ -1,6 +1,6 @@
 # vuelentino
 
-Hassle-free stylish documentation for Vue 3 components
+Generate docs for Vue components with style
 
 ## Installation
 
@@ -11,7 +11,18 @@ npm install -g vuelentino
 ## Getting started
 
 ```bash
-npx vuelentino -i src/components/*.vue -o docs/components -t template.md -e md
+# Look for Vue components and generate docs!
+vuelentino
+```
+
+Vuelentino by default will look for Vue components using the `src/**/*.vue`
+glob pattern and will generate the documentation under `docs/` using
+a [Markdown template](https://github.com/zuck/vuelentino/blob/main/templates/template.md).
+
+Of course, you can override all default options according to your needs:
+
+```bash
+vuelentino -i src/components/*.vue -o docs/components -t template.html
 ```
 
 ## Contribute
