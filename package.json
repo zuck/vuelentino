@@ -1,6 +1,6 @@
 {
   "name": "vuelentino",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate docs for Vue components with style",
   "main": "index.js",
   "bin": "index.js",
