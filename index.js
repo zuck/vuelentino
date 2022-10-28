@@ -23,7 +23,7 @@ async function parseComponents(inputPath) {
 function renderComponent(component, template) {
   const data = {
     ...component,
-    props: component.props.map((prop) => ({
+    props: (component.props || []).map((prop) => ({
       ...prop,
       type: {
         ...prop.type,
