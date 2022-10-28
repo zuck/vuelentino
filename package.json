@@ -28,7 +28,7 @@
   "dependencies": {
     "glob": "^8.0.3",
     "mustache": "^4.2.0",
-    "vue-docgen-api": "^4.52.0",
+    "vue-docgen-api": "^4.54.2",
     "yargs": "^17.5.1"
   }
 }
