@@ -6,7 +6,6 @@
 
 | Name | Type | Description | Default |
 | ---- | ---- | ----------- | ------- |
-
 {{#props}}
 | `{{name}}` | `{{type.name}}` | {{description}} | `{{^defaultValue.func}}{{{defaultValue.value}}}{{/defaultValue.func}}` |
 {{/props}}
@@ -15,22 +14,19 @@
 
 | Name | Description | Scoped |
 | ---- | ----------- | ------ |
-
 {{#slots}}
 | `{{name}}` | {{description}} | {{scoped}} |
 {{/slots}}
 
 ## Events
 
-| Name |
-| ---- |
-
+| Name | Description |
+| ---- | ----------- |
 {{#events}}
-| `{{name}}` |
+| `{{name}}` | {{description}} |
 {{/events}}
 
 ## Methods
-
 {{#methods}}
 
 ### `{{name}}({{args}})`
@@ -41,7 +37,6 @@
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-
 {{#params}}
 | `{{name}}` | `{{type}}` | {{description}} |
 {{/params}}
