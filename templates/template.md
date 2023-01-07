@@ -4,32 +4,36 @@
 
 ## Props
 
-| Name       | Type          | Description     | Default                  |
-|------------|---------------|-----------------|--------------------------|
+| Name | Type | Description | Default |
+| ---- | ---- | ----------- | ------- |
+
 {{#props}}
 | `{{name}}` | `{{type.name}}` | {{description}} | `{{^defaultValue.func}}{{{defaultValue.value}}}{{/defaultValue.func}}` |
 {{/props}}
 
 ## Slots
 
-| Name       | Scoped        |
-|------------|---------------|
+| Name | Description | Scoped |
+| ---- | ----------- | ------ |
+
 {{#slots}}
-| `{{name}}` | {{scoped}} |
+| `{{name}}` | {{description}} | {{scoped}} |
 {{/slots}}
 
 ## Events
 
-| Name       |
-|------------|
+| Name |
+| ---- |
+
 {{#events}}
 | `{{name}}` |
 {{/events}}
 
 ## Methods
 
-| Name       | Description     |
-|------------|-----------------|
+| Name | Description |
+| ---- | ----------- |
+
 {{#methods}}
 | `{{name}}` | {{description}} |
 {{/methods}}
