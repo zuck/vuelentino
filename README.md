@@ -25,6 +25,14 @@ Of course, you can override all default options according to your needs:
 vuelentino -i src/components/*.vue -o docs/components -t template.html
 ```
 
+## CLI options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `-i`   | A glob pattern used to select the input files | `src/**/*.vue` |
+| `-o`   | A destination path for the generated docs | `docs/` |
+| `-t`   | The template used to render the docs | [Markdown template](https://github.com/zuck/vuelentino/blob/main/templates/template.md) |
+
 ## Contribute
 
 If you want, you can also freely donate to fund the project development:
