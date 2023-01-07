@@ -31,9 +31,24 @@
 
 ## Methods
 
-| Name | Description |
-| ---- | ----------- |
-
 {{#methods}}
-| `{{name}}` | {{description}} |
+
+### `{{name}}({{args}})`
+
+{{description}}
+
+#### Params
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+
+{{#params}}
+| `{{name}}` | `{{type}}` | {{description}} |
+{{/params}}
+
+#### Returns
+
+{{#returns}}
+`{{type.name}}` {{description}}
+{{/returns}}
 {{/methods}}

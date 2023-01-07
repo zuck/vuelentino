@@ -30,6 +30,26 @@ function renderComponent(component, template) {
         name: prop.type.name.replace("|", ", "),
       },
     })),
+    methods: (component.methods || []).map((method) => ({
+      ...method,
+      returns:
+        method.returns ||
+        (method.tags.return || []).map((ret) => {
+          const [type, description] = ret.description.split("} ");
+          return {
+            description,
+            type: {
+              name: type.replace("{", ""),
+            },
+          };
+        }),
+      args: (method.params || []).map((param) => param.name).join(", "),
+      params: (method.params || []).map((param) => ({
+        name: param.name,
+        description: param.description,
+        type: (param.type.elements || []).map((type) => type.name).join(", "),
+      })),
+    })),
   };
   return mustache.render(template, data);
 }
