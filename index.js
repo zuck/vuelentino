@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
-const vuelentino = require("src/generator")
+const vuelentino = require("./src/generator")
 
 const argv = yargs(hideBin(process.argv)).argv;
 
